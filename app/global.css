@@ -1,19 +1,15 @@
 /* app/globals.css */
 
 body {
-  margin: 0;
-  padding: 0;
-  /* Use min-height to ensure gradient covers screen even with little content */
+  /* ... other styles ... */
   min-height: 100vh;
   font-family: sans-serif;
-  color: #333;
+  color: #333; /* Might need to change text color for readability */
 
-  /* Base gradient and size - make it larger than the viewport */
-  background: linear-gradient(to bottom right, #f0f4f8, #e0e7ed, #d9e2ec); /* Added a third color for more variation */
-  background-size: 200% 200%; /* Make the background larger */
-
-  /* Apply the animation */
-  animation: gradientAnimation 15s ease infinite alternate; /* Adjust timing and ease as needed */
+  /* Update the background gradient colors */
+  background: linear-gradient(to bottom right, #4facfe, #00f2fe); /* Using blues/cyans */
+  background-size: 300% 300%;
+  animation: gradientAnimation 4s ease infinite alternate;
 }
 
 /* Ensure html takes full height */
