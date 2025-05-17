@@ -1,21 +1,34 @@
-/* app/global.css */
+/* app/globals.css */
 
 body {
-  margin: 0; /* Remove default body margin */
-  padding: 0; /* Remove default body padding */
-  min-height: 100vh; /* Ensure the body takes at least the full viewport height */
-  font-family: sans-serif; /* Keep your preferred font */
-  /* Add the gradient background */
-  background: #0ba8e6;
-background: linear-gradient(90deg, rgba(11, 168, 230, 1) 0%, rgba(172, 217, 232, 1) 50%, rgba(11, 168, 230, 1) 100%);
-  color: white; /* Set a default text color that works with the background */
+  margin: 0;
+  padding: 0;
+  /* Use min-height to ensure gradient covers screen even with little content */
+  min-height: 100vh;
+  font-family: sans-serif;
+  color: #333;
+
+  /* Base gradient and size - make it larger than the viewport */
+  background: linear-gradient(to bottom right, #f0f4f8, #e0e7ed, #d9e2ec); /* Added a third color for more variation */
+  background-size: 200% 200%; /* Make the background larger */
+
+  /* Apply the animation */
+  animation: gradientAnimation 15s ease infinite alternate; /* Adjust timing and ease as needed */
 }
 
-/* You likely already have some base styles here, keep them */
+/* Ensure html takes full height */
 html {
-  /* Optional: ensure html also takes full height for better min-height: 100vh on body */
   height: 100%;
 }
 
-/* Keep any other global styles you have below */
-/* ... */
+/* Define the animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%; /* Start position */
+  }
+  100% {
+    background-position: 100% 100%; /* End position */
+  }
+}
+
+/* ... Keep any other global styles below ... */
