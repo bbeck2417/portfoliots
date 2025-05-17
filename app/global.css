@@ -1,0 +1,21 @@
+/* app/global.css */
+
+body {
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+  min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+  font-family: sans-serif; /* Keep your preferred font */
+  /* Add the gradient background */
+  background: #0ba8e6;
+background: linear-gradient(90deg, rgba(11, 168, 230, 1) 0%, rgba(172, 217, 232, 1) 50%, rgba(11, 168, 230, 1) 100%);
+  color: white; /* Set a default text color that works with the background */
+}
+
+/* You likely already have some base styles here, keep them */
+html {
+  /* Optional: ensure html also takes full height for better min-height: 100vh on body */
+  height: 100%;
+}
+
+/* Keep any other global styles you have below */
+/* ... */

@@ -1,0 +1,52 @@
+/* components/Card.module.css */
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem; /* Add margin to space out the cards */
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.9);
+  background-color: #cff3ff;
+  /* Optional: Set a width or max-width for cards */
+  max-width: 300px;
+  width: 100%; /* Ensure it takes full width up to max-width */
+  display: flex; /* Use flexbox for internal layout if needed */
+  flex-direction: column;
+}
+
+.title {
+  justify-content: center;
+  display: flex;
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #313233;
+}
+
+.description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Add styles for image or link if you added those props */
+/*
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: steelblue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+*/
