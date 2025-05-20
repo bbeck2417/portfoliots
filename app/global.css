@@ -7,7 +7,8 @@ body {
   color: #333; /* Might need to change text color for readability */
 
   /* Update the background gradient colors */
-  background: linear-gradient(to bottom right, #4facfe, #00f2fe); /* Using blues/cyans */
+ /* background: linear-gradient(to bottom right, #4facfe, #00f2fe); /* Using blues/cyans */
+  background: rgb(38, 38, 38);
   background-size: 300% 300%;
   animation: gradientAnimation 4s ease infinite alternate;
   font-family: "Raleway", sans-serif;
